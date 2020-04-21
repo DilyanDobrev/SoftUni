@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a95c8c8-f79d-4286-9a06-68f2afd5a5ed" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="real_deal_exam_db: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zn4q1xJ9MEHMWGrTaBa910aS1K" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/softuni/exam" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="softuni.exam.service.impl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\didaxcheto\Desktop\Java\Java DB 13 Jan 2020\Spring Data(Hibernate) 13 Feb 2020\Final Exam 29 Mar 2020 Java DB\Real Deal_Skeleton\RealDeal_Skeleton\src\main\java\softuni\exam" />
+      <recent name="C:\Users\didaxcheto\Desktop\Java\Java DB 13 Jan 2020\Spring Data(Hibernate) 13 Feb 2020\Final Exam 29 Mar 2020 Java DB\Real Deal_Skeleton\RealDeal_Skeleton\src\main\java\softuni\exam\models\entities" />
+      <recent name="C:\Users\didaxcheto\Desktop\Java\Java DB 13 Jan 2020\Spring Data(Hibernate) 13 Feb 2020\Final Exam 29 Mar 2020 Java DB\Real Deal_Skeleton\RealDeal_Skeleton\src\main\java\softuni\exam\util" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ExamApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="exam" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="softuni.exam.ExamApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a95c8c8-f79d-4286-9a06-68f2afd5a5ed" name="Default Changelist" comment="" />
+      <created>1585461711207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585461711207</updated>
+      <workItem from="1585461716442" duration="18920000" />
+      <workItem from="1585892818872" duration="173000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="455" y="97" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585462381255">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="455" y="97" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1585462381255" />
+    <state x="668" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1585472964662">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="668" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1585472964662" />
+    <state x="593" y="214" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1585464534738">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="593" y="214" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1585464534738" />
+    <state width="1340" height="257" key="GridCell.Tab.0.bottom" timestamp="1585484623001">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1585484623001" />
+    <state width="1340" height="257" key="GridCell.Tab.0.center" timestamp="1585484623000">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1585484623000" />
+    <state width="1340" height="257" key="GridCell.Tab.0.left" timestamp="1585484623000">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1585484623000" />
+    <state width="1340" height="257" key="GridCell.Tab.0.right" timestamp="1585484623001">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1585484623001" />
+    <state width="1340" height="257" key="GridCell.Tab.1.bottom" timestamp="1585484623003">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1585484623003" />
+    <state width="1340" height="257" key="GridCell.Tab.1.center" timestamp="1585484623002">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1585484623002" />
+    <state width="1340" height="257" key="GridCell.Tab.1.left" timestamp="1585484623002">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1585484623002" />
+    <state width="1340" height="257" key="GridCell.Tab.1.right" timestamp="1585484623002">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1585484623002" />
+    <state width="1340" height="257" key="GridCell.Tab.2.bottom" timestamp="1585484623004">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1585484623004" />
+    <state width="1340" height="257" key="GridCell.Tab.2.center" timestamp="1585484623003">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1585484623003" />
+    <state width="1340" height="257" key="GridCell.Tab.2.left" timestamp="1585484623003">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1585484623003" />
+    <state width="1340" height="257" key="GridCell.Tab.2.right" timestamp="1585484623003">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1340" height="257" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1585484623003" />
+    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1585479539821">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1600.860@0.0.1600.860" timestamp="1585479539821" />
+    <state x="721" y="328" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1585478931153">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="721" y="328" width="326" height="234" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1600.860@0.0.1600.860" timestamp="1585478931153" />
+    <state x="559" y="262" key="com.intellij.ide.util.TipDialog" timestamp="1585892819203">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="559" y="262" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1585892819203" />
+  </component>
+</project>
