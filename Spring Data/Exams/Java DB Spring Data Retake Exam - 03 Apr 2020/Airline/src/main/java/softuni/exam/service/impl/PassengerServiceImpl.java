@@ -57,28 +57,29 @@ public class PassengerServiceImpl implements PassengerService {
 
         PassengerSeedDto[] dtos = this.gson.fromJson(new FileReader(PASSENGERS_FILE_PATH), PassengerSeedDto[].class);
 
-        Arrays.stream(dtos)
-                .forEach(passengerSeedDto -> {
-                    Passenger passenger = this.modelMapper.map(passengerSeedDto, Passenger.class);
-                    Town byName = this.townService.getByName(passengerSeedDto.getTown());
+        for (PassengerSeedDto passengerSeedDto : dtos) {
+            Passenger passenger = this.modelMapper.map(passengerSeedDto, Passenger.class);
+            Town byName = this.townService.getByName(passengerSeedDto.getTown());
 
-                    if (this.validationUtil.isValid(passengerSeedDto)
-                            && this.passengerRepository.findByEmail(passengerSeedDto.getEmail()) == null
-                            && byName != null) {
+            if (!this.validationUtil.isValid(passengerSeedDto)
+                    || this.passengerRepository.findByEmail(passengerSeedDto.getEmail()) != null
+                    || byName == null) {
 
-                        passenger.setTown(byName);
+                sb.append("Invalid Passenger");
+                sb.append(System.lineSeparator());
+                continue;
+            }
 
-                        sb.append(String.format("Successfully imported Passenger %s - %s",
-                                passengerSeedDto.getLastName(),
-                                passengerSeedDto.getEmail()));
+            passenger.setTown(byName);
 
-                        this.passengerRepository.saveAndFlush(passenger);
-                    } else {
-                        sb.append("Invalid Passenger");
-                    }
+            sb.append(String.format("Successfully imported Passenger %s - %s",
+                    passengerSeedDto.getLastName(),
+                    passengerSeedDto.getEmail()));
 
-                    sb.append(System.lineSeparator());
-                });
+            this.passengerRepository.saveAndFlush(passenger);
+
+            sb.append(System.lineSeparator());
+        }
         return sb.toString();
     }
 

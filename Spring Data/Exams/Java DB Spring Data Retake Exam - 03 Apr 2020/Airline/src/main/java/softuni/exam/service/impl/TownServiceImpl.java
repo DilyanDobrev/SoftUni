@@ -51,22 +51,24 @@ public class TownServiceImpl implements TownService {
 
         TownSeedDto[] dtos = this.gson.fromJson(new FileReader(TOWNS_FILE_PATH), TownSeedDto[].class);
 
-        Arrays.stream(dtos)
-                .forEach(townSeedDto -> {
-                    if (this.validationUtil.isValid(townSeedDto) &&
-                            this.townRepository.findByName(townSeedDto.getName()) == null) {
+        for (TownSeedDto townSeedDto : dtos) {
+            if (!this.validationUtil.isValid(townSeedDto) ||
+                    this.townRepository.findByName(townSeedDto.getName()) != null) {
 
-                        Town town = this.modelMapper.map(townSeedDto, Town.class);
+                sb.append("Invalid Town");
+                sb.append(System.lineSeparator());
+                continue;
+            }
 
-                        sb.append(String.format("Successfully imported Town %s - %d",
-                                townSeedDto.getName(), townSeedDto.getPopulation()));
-                        this.townRepository.saveAndFlush(town);
-                    } else {
-                        sb.append("Invalid Town");
-                    }
+            Town town = this.modelMapper.map(townSeedDto, Town.class);
 
-                    sb.append(System.lineSeparator());
-                });
+            sb.append(String.format("Successfully imported Town %s - %d",
+                    townSeedDto.getName(), townSeedDto.getPopulation()));
+            this.townRepository.saveAndFlush(town);
+
+
+            sb.append(System.lineSeparator());
+        }
 
         return sb.toString();
     }

@@ -3,6 +3,7 @@ package softuni.exam.service.impl;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import softuni.exam.models.dtos.PlaneSeedDto;
 import softuni.exam.models.dtos.PlaneSeedRootDto;
 import softuni.exam.models.entities.Plane;
 import softuni.exam.repository.PlaneRepository;
@@ -51,24 +52,25 @@ public class PlaneServiceImpl implements PlaneService {
         PlaneSeedRootDto planeSeedRootDto = this.xmlParser
                 .unmarshalFromFile(PLANES_FILE_PATH, PlaneSeedRootDto.class);
 
-        planeSeedRootDto.getPlanes()
-                .forEach(planeSeedDto -> {
-                    if (this.validationUtil.isValid(planeSeedDto) &&
-                            this.planeRepository
-                                    .findByRegisterNumber(planeSeedDto.getRegisterNumber()) == null) {
+        for (PlaneSeedDto planeSeedDto : planeSeedRootDto.getPlanes()) {
+            if (!this.validationUtil.isValid(planeSeedDto) ||
+                    this.planeRepository
+                            .findByRegisterNumber(planeSeedDto.getRegisterNumber()) != null) {
 
-                        Plane plane = this.modelMapper.map(planeSeedDto, Plane.class);
+                sb.append("Invalid Plane");
+                sb.append(System.lineSeparator());
+                continue;
+            }
 
-                        sb.append(String.format("Successfully imported Plane %s",
-                                planeSeedDto.getRegisterNumber()));
+            Plane plane = this.modelMapper.map(planeSeedDto, Plane.class);
 
-                        this.planeRepository.saveAndFlush(plane);
-                    } else {
-                        sb.append("Invalid Plane");
-                    }
+            sb.append(String.format("Successfully imported Plane %s",
+                    planeSeedDto.getRegisterNumber()));
 
-                    sb.append(System.lineSeparator());
-                });
+            this.planeRepository.saveAndFlush(plane);
+
+            sb.append(System.lineSeparator());
+        }
 
         return sb.toString();
     }
